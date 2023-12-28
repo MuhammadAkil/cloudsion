@@ -62,7 +62,7 @@
 }
 
 html {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family:var(--ff-primary) !important;
     font-size: 16px;
     line-height: 1.5;
     color: #545454;
@@ -114,7 +114,8 @@ h3{
 }
 p{
   font-size: 1rem !important;
-  font-weight: 400;
+  font-weight: 400 !important;
+  text-align: justify !important;
 }
 small{
   line-height: 1.6em;
@@ -188,21 +189,6 @@ select {
   font-family: var(--ff-heading);
 }
 
-.fw-bold {
-  font-weight: var(--fw-bold);
-}
-
-.font-semibold {
-  font-weight: var(--fw-semi-bold);
-}
-
-.font-regular {
-  font-weight: var(--fw-regular);
-}
-
-.fs-300 {
-  font-size: var(--size-300);
-}
 
 .fs-400 {
   font-size: var(--size-400);
@@ -224,10 +210,6 @@ select {
   font-size: var(--size-800);
 }
 
-.fs-900 {
-  font-size: var(--size-900);
-}
-
 /* General setting */
 body {
   font-size: var(--fs-body);
@@ -245,13 +227,24 @@ body {
   white-space: nowrap;
 
 }
+.btn-gradient:hover{
+box-shadow: 1px 1px 10px 4px rgba(113, 201, 212, 0.73) !important;
+}
+/* .bg-line{
+  background-image: ('./assets/images/line.png');
+  height: 400px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 .bg-overlay {
     background-image: url(https://templatekit.jegtheme.com/cloudsion/wp-content/uploads/sites/383/2023/06/Sunshine-75.jpg);
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.08;
-    filter: brightness( 110% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );/
+    opacity: 0.1;
+
+    filter: brightness( 110% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
 }
 
 /*Hero Slider */
@@ -273,7 +266,10 @@ body {
 	/* medium and up screens */
   @media screen and (max-width: 1024px) {
         .fs-800 {
-  font-size: var(--size-600) !important;
+        font-size: var(--size-600) !important;}
+h2{
+  font-size: 1.4rem !important;
+  text-align: justify !important;
 }
   }
 	@media (min-width: 768px) {
