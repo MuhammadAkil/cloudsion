@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
 :root {
-  --color-accent-500: hsl(12, 60%, 45%);
-  --color-accent-400: hsl(12, 88%, 59%);
-  --color-accent-300: hsl(12, 88%, 75%);
   --color-accent-100: #FFFFFF0D;
   --color-primary-400: #07282C;
 
@@ -12,18 +9,7 @@
 
   --ff-primary: 'Open Sans', sans-serif;
   --ff-body: var(--ff-primary);
-  --ff-heading: var(--ff-primary);
-
-  --fw-regular: 400;
-  
-
-  /* --fs-300: .8125rem;
-  --fs-400: .857rem;
-  --fs-500: .9375rem;
-  --fs-600: 1rem;
-  --fs-700: 1.857rem;
-  --fs-800: 2.5rem;
-  --fs-900: 3.5rem; */
+  --ff-heading: var(--ff-primary);  
 
   --size-100: .25rem;
   --size-200: .5rem;
@@ -217,7 +203,11 @@ body {
   color: var(--color-primary-400);
 }
 
+.dropdown-item:hover{
+  /* background-color: transparent !important; */
+  background-image: linear-gradient(183deg, #417BA5 20%, #33C8BA 100%);
 
+}
 .btn-gradient{
   background-image: linear-gradient(183deg, #417BA5 20%, #33C8BA 100%);
   border: 1px solid ;
@@ -230,13 +220,6 @@ body {
 .btn-gradient:hover{
 box-shadow: 1px 1px 10px 4px rgba(113, 201, 212, 0.73) !important;
 }
-/* .bg-line{
-  background-image: ('./assets/images/line.png');
-  height: 400px;
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 .bg-overlay {
     background-image: url(https://templatekit.jegtheme.com/cloudsion/wp-content/uploads/sites/383/2023/06/Sunshine-75.jpg);
     background-position: center left;
